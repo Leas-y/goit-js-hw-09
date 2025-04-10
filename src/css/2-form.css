@@ -1,0 +1,56 @@
+.feedback-form {
+  margin-bottom: 20px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  width: 360px;
+}
+
+input[name='email'],
+textarea[name='message'] {
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 4px;
+  padding: 8px 0px 8px 16px;
+  margin-top: 8px;
+}
+
+textarea[name='message'] {
+  box-sizing: border-box;
+  height: 80px;
+  resize: none;
+  overflow: auto;
+}
+
+input[name='email']:hover,
+textarea[name='message']:hover {
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
+input[name='email']:focus,
+textarea[name='message']:focus {
+  border: 1px solid rgb(128, 128, 128);
+  outline: none;
+}
+
+.feedback-form button {
+  width: 86px;
+  border-radius: 8px;
+  background: rgb(78, 117, 255);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  padding: 8px 16px;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.feedback-form button:hover {
+  background-color: rgb(108, 140, 255);
+}
